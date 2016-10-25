@@ -2,6 +2,7 @@
   "name": "slack-builder",
   "version": "0.1.0",
   "description": "Slack Message Builder",
+  "repository": "https://github.com/dyladan/slack-builder.git",
   "scripts": {
     "test": "istanbul cover node_modules/mocha/bin/_mocha tests/all -- -R spec --recursive",
     "lint": "eslint ."
@@ -21,6 +22,7 @@
     "mocha": "^3.1.2"
   },
   "dependencies": {
+    "bluebird": "^3.4.6",
     "request": "^2.75.0",
     "request-promise": "^4.1.1"
   }
