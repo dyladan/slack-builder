@@ -5,7 +5,7 @@ A light utility library for easily creating slack messages for webhook custom in
 ## Example Usage
 
 ```javascript
-const sb = require('.');
+const sb = require('slack-builder');
 
 // create a webhook
 const hookUrl = ''; // Your webhook url goes here
