@@ -9,7 +9,7 @@ const sb = require('slack-builder');
 
 // create a webhook
 const hookUrl = ''; // Your webhook url goes here
-const colors = ['#00BCD4', '#2196F3', '#673AB7', '#E91E63', '#795548'];
+const colors = ['#dc172a', '#7dc540', '#7dc540'];
 
 // create some content
 const gitHubLink = sb.makeLink('https://github.com/dyladan/slack-builder', 'GitHub repo');
@@ -18,7 +18,7 @@ function makeAttach(index) {
   const attachment = new sb.Attachment()
     .setTitle(`Attachment # ${index}`)
     .setText(`This is the main text in message attachment ${index}, and can contain standard message markup.`)
-    .setColor(colors[index])
+    .setColor(colors[index - 1])
     .addField('User', 'Daniel')
     .addField('Index', index.toString())
     .setFooter('Created by Daniel Dyla');
